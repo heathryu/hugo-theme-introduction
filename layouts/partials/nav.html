@@ -73,7 +73,7 @@
             {{ if not (and $pageIsInBlog (eq .Page.Kind "section")) }}
             {{ with .Site.GetPage "/blog" }}
             {{ if $isHome }}
-            <a class="navbar-item" href="{{ printf "#%s" (.Title | urlize) }}">{{ .Title }}</a>
+            <a class="navbar-item" href="#blog">{{ .Title }}</a>
             {{ else }}
             <a class="navbar-item" href="{{ .Permalink }}">
                 {{ if $pageIsInBlog }}
